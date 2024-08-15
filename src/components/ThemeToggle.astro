@@ -28,9 +28,9 @@ const THEMES = ["Light", "Dark", "System"]
   >
     <ul>
       {
-        THEMES.map((theme) => (
+        THEMES.map(( theme ) => (
           <li class="themes-menu-option px-2 py-1.5 cursor-default hover:bg-neutral-400/40 dark:hover:bg-gray-500/50 rounded-sm">
-            {theme}
+            { theme }
           </li>
         ))
       }
@@ -72,14 +72,14 @@ const THEMES = ["Light", "Dark", "System"]
       : "light"
   }
 
-  const updateIcon = (themePreference) => {
-    document.querySelectorAll(".theme-toggle-icon").forEach((element) => {
+  const updateIcon = ( themePreference ) => {
+    document.querySelectorAll(".theme-toggle-icon").forEach(( element ) => {
       element.style.scale = element.id === themePreference ? "1" : "0"
     })
   }
 
   const updateTheme = () => {
-    if (remove != null) {
+    if ( remove != null ) {
       remove()
     }
     matchMedia.addEventListener("change", updateTheme)
@@ -98,16 +98,16 @@ const THEMES = ["Light", "Dark", "System"]
 
   updateTheme()
 
-  document.addEventListener("click", () => themesMenu.classList.remove("open"))
+  document.addEventListener( "click", () => themesMenu.classList.remove( "open" ) )
 
   document.getElementById("theme-toggle-btn").addEventListener("click", (e) => {
     e.stopPropagation()
-    const isClosed = !themesMenu.classList.contains("open")
-    themesMenu.classList[isClosed ? "add" : "remove"]("open")
+    const isClosed = !themesMenu.classList.contains( "open" )
+    themesMenu.classList[isClosed ? "add" : "remove"]( "open" )
   })
 
-  document.querySelectorAll(".themes-menu-option").forEach((element) => {
-    element.addEventListener("click", (e) => {
+  document.querySelectorAll( ".themes-menu-option" ).forEach(( element ) => {
+    element.addEventListener("click", ( e ) => {
       localStorage.setItem("theme", e.target.innerText.toLowerCase().trim())
       updateTheme()
     })
