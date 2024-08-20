@@ -2,6 +2,9 @@
 import Layout from "@/layouts/Layout.astro";
 import SectionContainer from "@/components/SectionContainer.astro";
 import Regresar from "@/components/icons/Regresar.astro";
+import Design from "@/components/icons/Design.astro";
+import Angular from "@/components/icons/Angular.astro";
+import Figma from "@/components/icons/Figma.astro";
 ---
 
 <Layout title="prueba experiencia" description="hola ">
@@ -23,7 +26,7 @@ import Regresar from "@/components/icons/Regresar.astro";
                     <img
                         class="object-cover object-center rounded-full"
                         alt="Grupo Empresarial Nexos"
-                        src="/public/company/logo nexos.webp"
+                        src="/company/logo nexos.webp"
                     />
                 </div>
                 <div
@@ -56,65 +59,86 @@ import Regresar from "@/components/icons/Regresar.astro";
             </div>
         </section>
 
-        <section>
-            <h4 class="font-bold text-white pb-4">Principales logros:</h4>
-
-            <ul>
-                <li class="text-white py-2 font-light">
-                    <span class="text-yellow-300 font-semibold"
-                        >Rediseño completo de la plataforma:</span
-                    > Transformé una plataforma rudimentaria en una solución moderna
-                    y visualmente coherente, implementando la paleta de colores corporativa
-                    y dividiendo las funcionalidades clave en módulos que luego integré
-                    en una única plataforma cohesiva. Esta actualización también
-                    incluyó el desarrollo de la plataforma administrativa de la empresa.
-                </li>
-                <li class="text-white py-2 font-light">
-                    <span class="text-yellow-300 font-semibold"
-                        >Adaptación a nuevos frameworks:</span
-                    > A pesar de no tener experiencia previa con frameworks, adquirí
-                    rápidamente conocimientos en Angular y Bootstrap, logrando implementar
-                    componentes visuales clave para el frontend de la plataforma.
-                    Este desafío fue especialmente significativo, ya que hasta ese
-                    momento solo había trabajado con HTML, CSS, y JavaScript en un
-                    nivel básico.
-                </li>
-                <li class="text-white py-2 font-light">
-                    <span class="text-yellow-300 font-semibold"
-                        >Desarrollo integral en un entorno ágil:</span
-                    > En un entorno de empresa pequeña, asumí responsabilidades tanto
-                    de diseño UX como de desarrollo frontend. Esto me permitió comprender
-                    y abordar de manera integral las necesidades de los usuarios,
-                    colaborando estrechamente con el equipo de backend que se encargaba
-                    de la lógica del servidor.
-                </li>
-                <li class="text-white py-2 font-light">
-                    <span class="text-yellow-300 font-semibold"
-                        >Capacitación acelerada y efectiva:</span
-                    > La empresa proporcionó cursos de Udemy sobre Angular, lo que
-                    me permitió adquirir rápidamente las bases necesarias para contribuir
-                    al desarrollo del proyecto. Esta formación autodirigida fue clave
-                    para el éxito de la migración a la plataforma virtual.
-                </li>
-            </ul>
-
-            <h3 class="font-bold text-white pt-6">Funciones adicionales:</h3>
-
-            <ul>
-                <li class="text-white py-2 font-light">
-                    <span class="text-yellow-300 font-semibold"
-                        >Moderación y organización de asambleas:</span
-                    >Además de mis responsabilidades técnicas, también fui
-                    responsable de moderar y organizar asambleas en sus tres
-                    modalidades: presencial, virtual, y mixta. Esta función
-                    exigía una combinación de habilidades organizativas y
-                    técnicas para asegurar que las reuniones se llevaran a cabo
-                    de manera efectiva y sin contratiempos.
-                </li>
-            </ul>
-
-            <h4 class="font-bold text-white py-5">Impacto del proyecto:</h4>
-            <p></p>
+        <section class="text-gray-400 body-font">
+            <h2 class="text-center text-3xl">Principales logros</h2>
+            <div class="container py-8 mx-auto">
+                <div
+                    class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col"
+                >
+                    <div
+                        class="sm:w-24 sm:h-24 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-blue-500 bg-gray-800 flex-shrink-0"
+                    >
+                        <Design class="size-14" />
+                    </div>
+                    <div
+                        class="flex-grow sm:text-left text-center mt-6 sm:mt-0"
+                    >
+                        <h2
+                            class="text-yellow-400 text-lg title-font font-semibold mb-2"
+                        >
+                            Rediseño completo de la plataforma
+                        </h2>
+                        <p
+                            class="leading-relaxed text-base text-white font-extralight"
+                        >
+                            <span class="font-medium">
+                                Rediseñé y desarrollé</span
+                            > una interfaz moderna, integrando los colores corporativos
+                            y funcionalidades clave en una plataforma cohesiva.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col"
+                >
+                    <div
+                        class="flex-grow sm:text-left text-center mt-6 sm:mt-0"
+                    >
+                        <h2
+                            class="text-yellow-400 text-lg title-font font-semibold mb-2"
+                        >
+                            Adaptación a nuevos frameworks
+                        </h2>
+                        <p
+                            class="leading-relaxed text-base text-white font-extralight"
+                        >
+                            <span class="font-medium">Aprendí y apliqué</span>
+                            Angular y Bootstrap, implementando componentes visuales
+                            sin experiencia previa en frameworks.
+                        </p>
+                    </div>
+                    <div
+                        class="sm:w-24 order-first sm:order-none sm:h-24 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full text-blue-500 bg-gray-800 flex-shrink-0"
+                    >
+                        <Angular class="size-14" />
+                    </div>
+                </div>
+                <div
+                    class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col"
+                >
+                    <div
+                        class="sm:w-24 sm:h-24 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-blue-500 bg-gray-800 flex-shrink-0"
+                    >
+                        <Figma class="size-14" />
+                    </div>
+                    <div
+                        class="flex-grow sm:text-left text-center mt-6 sm:mt-0"
+                    >
+                        <h2
+                            class="text-yellow-400 text-lg title-font font-semibold mb-2"
+                        >
+                            Desarrollo integral en un entorno ágil
+                        </h2>
+                        <p
+                            class="leading-relaxed text-base text-white font-extralight"
+                        >
+                            <span class="font-medium">Diseñé y desarrollé</span>
+                            el frontend en un entorno ágil, asumiendo también tareas
+                            de UX.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
     </SectionContainer>
 </Layout>
